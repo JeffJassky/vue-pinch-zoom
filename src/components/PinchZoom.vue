@@ -36,7 +36,7 @@ export default class PinchZoom extends Vue {
     @Prop() wheelZoomFactor: number;
     @Prop() draggableImage: boolean;
 
-    _properties: Properties;
+    _properties: Props;
     ivyPinch: any;
     styleObject:any;
     isZoomedIn: boolean = false;
