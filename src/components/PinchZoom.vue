@@ -11,12 +11,12 @@
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator';
 import { IvyPinch } from '../ivypinch';
-import { Properties } from '../interfaces'; 
+import { Properties as Props } from '../interfaces'; 
 import { defaultProperties } from '../properties';
 
 @Component
 export default class PinchZoom extends Vue {
-    @Prop() properties: Properties;
+    @Prop() properties: Props;
     @Prop() transitionDuration: number;
     @Prop() doubleTap: boolean;
     @Prop() doubleTapScale: number;
